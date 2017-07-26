@@ -4,7 +4,7 @@
 (require 2htdp/image)
 (require racket/list) ;gets list-ref, take and drop
 
- PROBLEM 1:
+ ; PROBLEM 1:
  
  ; In the lecture videos we designed a function to make a Sierpinski triangle fractal
  ; Design a function to create this circle fractal of size n and colour c.
@@ -64,10 +64,6 @@
 ;; - "O"
 ;; interp. a square is either empty (represented by false) or has and "X" or an "O"
 
-(define (fn-for-value v)
-  (cond [(false? v) (...)]
-        [(string=? v "X") (...)]
-        [(string=? v "O") (...)]))
 
 ;; Board is (listof Value)
 ;; a board is a list of 9 Values
@@ -99,12 +95,6 @@
               (list "X"  "X"  "O"     
                     "O"  "X"  "O"
                     "X"  "0" "X")))
-
-(define (fn-for-board b)
-  (cond [(empty? b) (...)]
-        [else 
-         (... (fn-for-value (first b))
-              (fn-for-board (rest b)))]))
 
 
 
