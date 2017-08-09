@@ -276,20 +276,5 @@
     (filter valid? los)))
 
 
-(define E (make-ta "Erika" 1 (list 1 3 7 9)))
-(define Ry (make-ta "Ryan" 1 (list 1 8 10)))
-(define Re (make-ta "Reece" 1 (list 5 6)))
-(define Go (make-ta "Gordon" 2 (list 2 3 9)))
-(define D (make-ta "David" 2 (list 2 8 9)))
-(define K (make-ta "Katie" 1 (list 4 6)))
-(define A (make-ta "Aash" 2 (list 1 10)))
-(define Gr (make-ta "Grant" 2 (list 1 11)))
-(define Ra (make-ta "Rae" 2 (list 1 11 12)))
-(define Al (make-ta "Alex" 1 (list 4)))
-
-(define QUIZ (list E Ry Re Go D K A Gr Ra Al))
-
-
-
 
 
