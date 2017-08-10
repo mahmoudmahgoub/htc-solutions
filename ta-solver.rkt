@@ -143,9 +143,6 @@
 ;; Slot is Natural
 ;; interp. each TA slot has a number, is the same length, and none overlap
 
-;; Blank is false
-;; interp. Empty slot in the schedule
-(define B false)
 
 (define-struct ta (name max avail))
 ;; TA is (make-ta String Natural (listof Slot))
@@ -248,8 +245,8 @@
                                       (list (make-assignment SOBA 1)
                                             (make-assignment SOBA 3))))
               (list
-                                      (list (make-assignment SOBA 1)
-                                            (make-assignment SOBA 3))))
+               (list (make-assignment SOBA 1)
+                     (make-assignment SOBA 3))))
 (check-expect (keep-valid NOODLE-TAs (list
                                       (list (make-assignment SOBA 1)
                                             (make-assignment SOBA 3)
