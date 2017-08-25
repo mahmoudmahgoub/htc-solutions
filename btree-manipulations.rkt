@@ -2,7 +2,7 @@
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname btree-manipulations) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 (define-struct node (val left right))
-;; BST is one of:
+;; BT is one of:
 ;; - false
 ;; - (make-node Natural Node Node)
 ;; interp: Just a binary search tree
@@ -23,8 +23,8 @@
 
 
 
-;; BST -> BST
-;; produce a reversed BST
+;; BT -> BT
+;; produce a reversed BT
 (check-expect (rev N1) N1)
 (check-expect (rev N2) (make-node 2 false N1))
 (check-expect (rev N3) (make-node 3 N4 (make-node 2 false N1)))
@@ -40,8 +40,8 @@
       (make-node (node-val n) (rev (node-right n)) (rev (node-left n)))))
 
 
-;; BST -> BST
-;; produce an inverted BST
+;; BT -> BT
+;; produce an inverted BT
 (check-expect (invert N1) N1)
 (check-expect (invert N3) (make-node 1 false
                                      (make-node 2
