@@ -5,7 +5,7 @@
 ;; BT is one of:
 ;; - false
 ;; - (make-node Natural Node Node)
-;; interp: Just a binary search tree
+;; interp: Just a binary tree
 (define N1 (make-node 1 false false))
 (define N2 (make-node 2 N1 false))
 (define N4 (make-node 4 false false))
