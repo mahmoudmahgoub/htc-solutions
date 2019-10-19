@@ -7,7 +7,7 @@
 ;PROBLEM:
 ;
 ;Using the following data definition, design a function that consumes a room and produces 
-;the total number of rooms reachable from the given room. Include the starting room itself. 
+;the total number of rooms reachabssle from the given room. Include the starting room itself. 
 ;Your function should be tail recursive, but you should not use the primitive length function.
 
 ;; Data Definitions: 
